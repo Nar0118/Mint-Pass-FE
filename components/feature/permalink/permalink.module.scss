@@ -1,0 +1,15 @@
+.container {
+  input {
+    color: var(--light_gray) !important;
+    max-width: 1232px !important;
+    width: 100%;
+    max-height: 48px;
+    height: 100%;
+
+    &:active,
+    &:focus,
+    &:focus-visible {
+      color: var(--white_900) !important;
+    }
+  }
+}

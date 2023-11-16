@@ -1,0 +1,26 @@
+name: Build
+on:
+  workflow_dispatch:
+  pull_request:
+    types: [opened, edited, reopened]
+jobs:
+  build:
+    strategy:
+      matrix:
+        node-version: [18.x]
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: Get project code
+        uses: actions/checkout@v2
+      - name: Install Deps
+        run: yarn install
+      - name: Lint code
+        run: yarn lint
+      - name: Format the code
+        run: yarn format
+      - name: Build project
+        run: yarn build
+      - name: Check Build Status
+        if: failure() || success()
+        run: echo "Build finished with ${{ job.status }} status"

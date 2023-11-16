@@ -1,0 +1,107 @@
+.wrapper {
+  width: 100%;
+  color: var(--white_900);
+  max-height: 652px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  padding-top: 78px;
+
+  .titleContainer {
+    max-width: 618px;
+    font-size: var(--text_xxl);
+    font-family: var(--title-font);
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.7px;
+    background-clip: text;
+    text-align: center;
+    .nftPR {
+      color: var(--green_150);
+    }
+  }
+
+  .useTypes {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 20px;
+    justify-items: center;
+    height: 200%;
+    padding: 107px;
+    background: radial-gradient(
+      closest-side,
+      var(--bg_color) 0%,
+      var(--black_900) 100%
+    );
+    box-shadow: 0px -1px 35px 0px var(--bg_color);
+    border-radius: 50%;
+
+    .boxes {
+      height: 82px;
+      padding: 21px 73px;
+      border-radius: 40px;
+      border: 2px solid var(--border_boxes);
+      display: flex;
+      align-items: center;
+      color: var(--white_900);
+      font-family: var(--description-font);
+      text-align: center;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 27px;
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3) {
+        grid-column: span 4;
+      }
+
+      &:nth-child(3) ~ .boxes {
+        grid-column: span 3;
+      }
+
+      &:nth-child(1) {
+        justify-self: flex-end;
+      }
+
+      &:nth-child(1),
+      &:nth-child(4) {
+        background:
+          linear-gradient(var(--gradient_color), var(--gradient_color_last))
+            padding-box,
+          linear-gradient(
+              to right,
+              var(--black_900),
+              var(--border_boxes),
+              var(--border_boxes)
+            )
+            border-box;
+        border-radius: 50em;
+        border: 2px solid transparent;
+      }
+
+      &:nth-child(3),
+      &:nth-child(7) {
+        background:
+          linear-gradient(var(--gradient_color), var(--gradient_color_last))
+            padding-box,
+          linear-gradient(
+              to left,
+              var(--black_900),
+              var(--border_boxes),
+              var(--border_boxes)
+            )
+            border-box;
+        border-radius: 50em;
+        border: 2px solid transparent;
+      }
+
+      &:nth-child(3) {
+        justify-self: flex-start;
+      }
+    }
+  }
+}

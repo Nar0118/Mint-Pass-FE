@@ -1,0 +1,25 @@
+.textarea {
+  border: 1px solid var(--green_700);
+  border-radius: 20px;
+  max-height: 137px;
+  height: 100%;
+  max-width: 1232px;
+  width: 100%;
+
+  &:hover {
+    border: 1px solid var(--green_700);
+  }
+
+  &:active,
+  &:focus {
+    border: 1px solid var(--green_200);
+  }
+}
+
+.errorMessage {
+  color: var(--dark_red_900);
+}
+
+.error {
+  border: 1px solid var(--dark_red_900) !important;
+}

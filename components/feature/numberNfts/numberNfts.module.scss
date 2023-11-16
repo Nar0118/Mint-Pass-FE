@@ -1,0 +1,83 @@
+.content {
+  max-width: 604px;
+  width: 100%;
+  background: var(--black_900);
+  border: 1px solid var(--green_700);
+  border-radius: 38px;
+  min-height: 48px;
+  height: 100%;
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+
+  & > div:nth-child(1) {
+    padding: 0 !important;
+  }
+
+  input {
+    background: var(--black_900);
+    border: none;
+    color: var(--silver_999) !important;
+    width: 90%;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid var(--black_900) !important;
+
+    &:active,
+    &:focus,
+    &:focus-visible {
+      outline: none !important;
+      border: 1px solid var(--black_900) !important;
+    }
+  }
+
+  .arrows {
+    background: var(--green_700);
+    max-width: 28px;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+    display: grid;
+    height: 90%;
+
+    .arrowsImg {
+      cursor: pointer;
+    }
+
+    .arrowsImgSelected {
+      filter: brightness(0) invert(1);
+    }
+  }
+}
+
+.contentFocused {
+  border: 1px solid var(--green_200);
+
+  input {
+    color: var(--white_900) !important;
+  }
+}
+
+.numberOfNFTsFocused {
+  color: var(--silver_999);
+}
+
+.numberOfNFTsUnFocused {
+  color: var(--white_900);
+}
+
+.numberOfNFTs {
+  width: 100%;
+  max-width: 604px;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+
+  p {
+    margin-bottom: 0;
+  }
+}

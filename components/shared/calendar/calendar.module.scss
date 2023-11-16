@@ -1,0 +1,115 @@
+.content {
+  width: 604px;
+  height: 48px;
+  background: var(--black_900);
+  border-radius: 30px;
+  color: var(--light_gray);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  font-family: 'circular';
+}
+
+.contentFocused {
+  border: 1px solid var(--green_200);
+}
+
+.contentBlured {
+  border: 1px solid var(--green_900);
+}
+
+.titleFocused {
+  color: var(--light_gray);
+}
+
+.titleBlured {
+  color: var(--white_900);
+}
+
+.title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.titleBlock {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.calendarContent {
+  display: flex;
+  padding: 10px;
+  background: var(--black_900);
+  width: 360px;
+  height: 290px;
+  float: right;
+  border-radius: 20px;
+  margin-top: 5px;
+  border: 1px solid var(--gray_3b);
+
+  .calendar {
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+    border: 1px solid var(--gray_3b);
+    color: var(--white_900);
+    background: var(--light_black);
+    overflow: hidden;
+
+    button:hover,
+    button:active,
+    button:focus {
+      background: var(--green_200);
+    }
+
+    & > div:nth-child(1) {
+      border-bottom: 1px solid var(--gray_3b) !important;
+    }
+
+    abbr {
+      text-decoration: auto;
+      color: var(--white_900);
+    }
+
+    button {
+      color: var(--gray_76);
+
+      span {
+        color: var(--white_900);
+      }
+    }
+  }
+
+  .times {
+    height: 100%;
+    width: 100%;
+    max-width: 82px;
+    display: grid;
+    grid-template-columns: auto auto;
+    color: var(--gray_76);
+    border: 1px solid var(--gray_3b);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding: 13px 5px;
+
+    .timesItems {
+      max-height: 267px;
+      overflow-y: auto;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      div {
+        text-align: center;
+        cursor: pointer;
+      }
+
+      .selectedTimes {
+        color: var(--white_900);
+      }
+    }
+  }
+}

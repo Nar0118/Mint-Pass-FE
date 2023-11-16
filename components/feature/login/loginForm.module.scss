@@ -1,0 +1,60 @@
+.container {
+  max-width: 480px;
+  width: 100%;
+  border-radius: 22px;
+  background: var(--black_1000);
+  margin: 0 auto;
+  border: 1px solid var(--gray_900);
+  padding: 24px 46px 43px 46px;
+  display: grid;
+  margin-top: 40px;
+
+  label {
+    color: var(--white_900) !important;
+  }
+
+  .title {
+    color: var(--white_900);
+    text-align: start;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: bold;
+    margin-bottom: 25px;
+  }
+
+  .forgotPassword {
+    color: var(--green_600);
+    text-align: start;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    margin-top: 10px;
+  }
+
+  .btnTransfer {
+    display: none;
+  }
+
+  form {
+    & > div {
+      margin-bottom: 0 !important;
+    }
+
+    button {
+      margin: 28px auto 20px auto;
+    }
+  }
+
+  .alreadyHaveAccount {
+    color: var(--white_900);
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    column-gap: 7px;
+
+    a {
+      color: var(--green_600);
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.loader {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: calc(100vh - 70px);
+  margin: 50px 0 20px;
+  z-index: 10;
+
+  &.fullScreen {
+    position: fixed;
+    width: 100vw;
+    top: 0;
+    left: 0;
+  }
+
+  :global(.ant-spin) {
+    color: var(--primary_text) !important;
+  }
+
+  :global(.ant-spin-text) {
+    margin-top: 10px;
+  }
+
+  .spiner {
+    font-size: var(--text_l);
+  }
+}

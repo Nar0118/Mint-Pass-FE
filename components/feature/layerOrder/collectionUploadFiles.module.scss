@@ -1,0 +1,37 @@
+.container {
+  align-items: center;
+  column-gap: 20px;
+  display: grid;
+  row-gap: 10px;
+  background: var(--black_900);
+  border-radius: 21px;
+  max-width: 1232px;
+  border: 1px solid var(--green_700);
+  padding: 20px;
+  font-size: 14px;
+  font-weight: 600;
+
+  .content {
+    display: flex;
+    column-gap: 24px;
+    align-items: center;
+
+    .noFileChosen {
+      color: var(--white_900);
+    }
+
+    .filesCount {
+      display: flex;
+      column-gap: 5px;
+      align-items: center;
+      color: var(--white_900);
+    }
+  }
+
+  .allFiles {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

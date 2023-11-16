@@ -1,0 +1,21 @@
+.customRadioGroup {
+  span {
+    border-color: var(--green_500) !important;
+    border-width: 2px !important;
+    color: var(--light_gray);
+    font-weight: 600;
+    padding-left: 5px;
+    background: unset;
+
+    &::after {
+      background-color: var(--green_200);
+    }
+  }
+
+  .active {
+    span {
+      border-color: var(--green_200) !important;
+      color: var(--white_900);
+    }
+  }
+}

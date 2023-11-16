@@ -1,0 +1,22 @@
+.files {
+  max-width: 395px;
+  width: 100%;
+  max-height: 48px;
+  height: 100%;
+  display: flex;
+  background: var(--green_700);
+  color: var(--white_900);
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 40px;
+  font-family: 'circular';
+  padding: 12px 16px;
+  margin: 0 auto;
+
+  & > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+  }
+}

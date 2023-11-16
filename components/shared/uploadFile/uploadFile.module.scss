@@ -1,0 +1,35 @@
+.content {
+  input[type='file'] {
+    display: none;
+  }
+
+  label {
+    cursor: pointer;
+    font-size: 12px;
+  }
+
+  .small {
+    padding: 8px 12px;
+  }
+
+  .big {
+    padding: 8px 31px;
+  }
+
+  .blackColor {
+    color: var(--black_900);
+  }
+
+  .whiteBg {
+    background: var(--white_900);
+  }
+
+  .contentWhite {
+    max-height: 41px;
+    height: 100%;
+    background: var(--white_900);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+  }
+}

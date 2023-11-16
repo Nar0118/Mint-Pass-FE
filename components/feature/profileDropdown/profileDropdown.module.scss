@@ -1,0 +1,38 @@
+.content {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  background-color: var(--black_900);
+  color: var(--white_900);
+  cursor: pointer;
+  column-gap: 10px;
+  padding: 0 10px;
+}
+
+.container > div:nth-child(2) {
+  height: 100%;
+  color: var(--white_900);
+  max-height: 107px;
+  width: 100%;
+  max-width: 185px;
+  background: var(--light_black);
+  left: 47px !important;
+  border: 1px solid var(--black_1f);
+  border-radius: 5px;
+  padding: 10px 17px;
+
+  & > div {
+    display: grid;
+    row-gap: 10px;
+  }
+
+  .item a {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+  }
+
+  .active {
+    color: var(--green_200);
+  }
+}
